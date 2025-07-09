@@ -4,27 +4,27 @@
 |**Component**|     **Syntax Example**       |                **Purpose**                      |
 |-------------|------------------------------|-------------------------------------------------|
 | [FROM]      |  FROM node:18-alpine         |  Base image (OS + preinstalled software)        |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [WORKDIR]   |  WORKDIR /app                |  Sets working directory inside container        |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [COPY]      |  COPY package*.json ./       |  Copies files from host to container            |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [RUN]       |  RUN npm install             |  Executes commands  during image build          |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [EXPOSE]    |  EXPOSE 3000                 |  Documents port (doesn't publish it)            |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [ENV]       |  ENV NODE_ENV=production     |  Sets environment variables                     |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [CMD]       |  CMD ["npm", "start"]        |  Default command to run when container starts   |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [ENTRYPOINT]|  ENTRYPOINT ["python3"]      |  Configures container to run as executable      |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [ARG]       |  ARG APP_VERSION=1.0         |  Build-time variables (not persisted in image)  |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [VOLUME]    |  VOLUME ["/data"]            |  Creates mount point for persistent storage     |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 | [USER]      |  USER node                   |  Specifies non-root user for security           |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 |[HEALTHCHECK]|  HEALTHCHECK --interval=30s..|  Container health monitoring                    |
 |-------------|------------------------------|-------------------------------------------------|
 
