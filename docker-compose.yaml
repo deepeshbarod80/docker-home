@@ -1,0 +1,26 @@
+# Create docker-compose.yaml
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0                         # use latest version
+    container_name: mysql-db                 # edit container name
+    environment:
+      MYSQL_ROOT_PASSWORD: secure-root-pass  # edit root password
+      MYSQL_DATABASE: mysql_db               # edit database name
+      MYSQL_USER: mysqldb_user               # edit username
+      MYSQL_PASSWORD: mysqldb_pass           # edit user password
+    ports:
+      - "3306:3306"                          # 3306 is a DB standard port
+    volumes:
+      - mysql_data:/var/lib/mysql            # path location of storage of DB files
+
+volumes:
+  mysql_data:                                # edit volume name
+
+
+# Output:
+# ✔ Network "dockerfiles_default"      Created
+# ✔                                                                                 0.1s
+# ✔ Volume "dockerfiles_mysql_data"    Created                                                                                  0.0s
+# ✔ Container mysql-db                 Started
