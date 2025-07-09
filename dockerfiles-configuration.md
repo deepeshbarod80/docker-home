@@ -1,6 +1,5 @@
 1. Dockerfile Components & Syntax
 
-|-------------|------------------------------|-------------------------------------------------|
 |**Component**|     **Syntax Example**       |                **Purpose**                      |
 |-------------|------------------------------|-------------------------------------------------|
 | [FROM]      |  FROM node:18-alpine         |  Base image (OS + preinstalled software)        |
@@ -26,7 +25,7 @@
 | [USER]      |  USER node                   |  Specifies non-root user for security           |
 |             |                              |                                                 |
 |[HEALTHCHECK]|  HEALTHCHECK --interval=30s..|  Container health monitoring                    |
-|-------------|------------------------------|-------------------------------------------------|
+|             |                              |                                                 |
 
 ---
 
