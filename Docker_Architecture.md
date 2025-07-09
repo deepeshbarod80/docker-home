@@ -14,7 +14,7 @@ Docker is a platform that enables containerization, allowing developers to packa
 5. **Docker Images**
 6. **Docker Containers**
 7. **Docker Registry**
-8. **Networking
+8. **Networking**
 9. **Volumes**
 
 ---
