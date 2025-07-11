@@ -9,7 +9,8 @@ docker ps - List running containers.
 docker ps -a
 
 # Stop a running container.
-docker stop 
+docker stop <container_id>/<container_name>
+
 # Start a stopped container.
 docker start <container_id>/<container_name>
 
