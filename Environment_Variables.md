@@ -1,4 +1,6 @@
-Of course. Here are the common ways to pass environment variables to containers using both Docker and `kubectl` commands.
+
+# Environment Variables in Docker and Kubernetes
+
 
 ### **Docker**
 
