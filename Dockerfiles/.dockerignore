@@ -1,0 +1,6 @@
+
+# for node app
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
