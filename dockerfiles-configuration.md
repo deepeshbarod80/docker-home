@@ -38,7 +38,7 @@ Example:
 
 // Dockerfile:
 --------------------------------------------------->
-```yaml
+```dockerfile
 # Base image (OS + preinstalled software)
 FROM node:18-alpine
 
@@ -64,7 +64,7 @@ CMD ["npm", "start"]
 --------------------------------------------------->
 
 // App-Repo Structure:
-```yml
+```bash
 my-app/
 ├── Dockerfile
 ├── package.json
@@ -82,7 +82,7 @@ Example:
 
 // Frontend Dockerfile:
 ---------------------------->
-```yaml
+```dockerfile
         |<--------------------- # Stage 1: Build ------------------>|
 # Base image (OS + preinstalled software)
 FROM node:18-alpine AS builder
@@ -119,7 +119,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 
 // Backend Dockerfile:
-```yaml
+```dockerfile
         |<--------------------- # Stage 1: Build ------------------>|
 # Base image (OS + preinstalled software)
 FROM maven:3.8.6-openjdk-17 AS build
@@ -174,7 +174,7 @@ Example:
 
 // Frontend Dockerfile:
 -------------------->
-```yaml
+```dockerfile
         |<--------------------- # Stage 1: Build ------------------>|
 # Base image (OS + preinstalled software)
 FROM node:18-alpine AS builder
@@ -210,7 +210,7 @@ EXPOSE 3000
 -------------------->
 
 // Backend Dockerfile:
-```yaml
+```dockerfile
 # Base image of python  
 FROM python:3.11-slim
 
@@ -233,7 +233,7 @@ EXPOSE 8000
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "myproject.wsgi"]
 ```
 
-----------------------------------------------------------------------------------
+---
 
 
 
